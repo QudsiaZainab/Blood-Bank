@@ -1,0 +1,138 @@
+body{
+    background: linear-gradient(135deg, pink, pink);
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.nav-item
+{
+    padding: 0 10px;
+}
+.container-fluid
+{
+    padding-left: 10px;
+}
+.navbar
+{
+    padding-left: 10vh;
+}
+.contain
+{
+    max-width: 700px;
+    width: 100%;
+    background: #fff;
+    padding: 25px 30px;
+    border-radius: 5px;
+    margin-top: 10vh;
+}
+.contain .title
+{
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+}
+.contain .title::before{
+    content:'';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    background: linear-gradient(135deg, rgb(173, 52, 209), #9b59b6);
+}
+.contain form .user-detail{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+}
+form .user-detail .input-box{
+    width: calc(100%/2 - 20px);
+    /* margin: 20px 0 12px 0; */
+    margin-bottom: 15px;
+}
+.user-detail .input-box .details{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.user-detail .input-box .input{
+    height: 45px;
+    width: 100px;
+    outline: none;
+    border-radius: 5px;
+    border-radius: 1px solid #ccc;
+    padding-left: 18px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+#address
+{
+    height: 45px;
+    width: 540px;
+}
+.user-detail .input-box input:focus,
+.user-detail .input-box input:valid{
+    border-color: #9b59b6;
+}
+form .gender-details .gender-title
+{
+    font-size: 20px;
+    font-weight: 500;
+}
+form .gender-details .category
+{
+    display:flex;
+    width: 80%;
+    margin: 14px 0;
+    /* justify-content: space-between; */
+}
+.gender-details .gender {
+    margin-right: 50px;
+    margin-left: 5px;
+}
+/* form .button
+{
+    height:45px;
+    margin: 45px 0 ;
+} */
+form .button {
+    height:45px;
+    margin-top: 5vh;
+    margin-bottom: 12vh;
+    margin-left: 0;
+    margin-right: 0;
+    /* height:100%; */
+    width:100%;
+    outline:none;
+    color: #fff;
+    border: none;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing:1px ;
+    /* background: linear-gradient(135deg, #71b7e6, #9b59b6); */
+    background: linear-gradient(135deg, rgb(173, 52, 209), #9b59b6);
+}
+form .button :hover{
+    cursor:pointer;
+}
+@media (max-width:584px) {
+    .contain{
+        max-width: 100%;
+    }
+    form .user-detail .input-box{
+        margin-bottom: 15px;
+        width: 100%;
+    }
+    form .gender-details .category
+    {
+        width: 100%;
+    }
+    .contain form .user-detail{
+        overflow-y: scroll;
+        max-height: 300px;
+    }
+}

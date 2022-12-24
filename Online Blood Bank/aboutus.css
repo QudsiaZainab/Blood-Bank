@@ -1,0 +1,44 @@
+body{
+    background: linear-gradient(135deg, pink, pink);
+}
+.nav-item
+{
+    padding: 0 10px;
+}
+.container-fluid
+{
+    padding-left: 10px;
+}
+.navbar
+{
+    padding-left: 10vh;
+}
+.we
+{
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+}
+.sideimg
+{
+    float: right;
+    width: 90vh;
+    margin-left: 3vh;
+    margin-bottom: 2vh;
+}
+p{
+    font-size: 3vh;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: justify;
+}
+.container
+{
+    margin-top: 10vh;
+}
+.visionhd
+{
+    text-align: center;
+}
+li{
+    font-size: 3vh;
+    font-family: 'Times New Roman', Times, serif;
+}

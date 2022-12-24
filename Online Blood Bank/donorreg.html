@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="donorreg.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" >
+    <link rel="icon" href = "26a16cbe6c24539d6fec034e43716d2e.png">
+    <title>Online Blood Bank</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top ">
+        <div class="container-fluid">
+          <a class="navbar-brand text-danger" href="#">OnlineBloodBank</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="aboutus.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="donorreg.html">Donor Regestration</a>
+            </li>
+            
+            <li class="nav-item">
+                <a class="nav-link" href="donors.html">Find Donors</a>
+                </li>
+              <li class="nav-item">
+              <a class="nav-link" href="contactus.html">Contact Us</a>
+            </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class = "contain">
+        <div class = "title">Donor Registration</div>
+        <form  method="post" id="signup" name = "reg_form">
+            <div class="user-detail">
+                <div class="input-box">
+                    <label for = "Full_Name" class = "details" >Full Name</label>
+                    <input type = "text" placeholder = "Enter your name" name = "name" id = "name" required>
+                    <small class = "field-error"></small>
+                </div>
+                <div class="input-box">
+                    <label for = "username" class = "details">Username</label>
+                    <input type = "text" placeholder = "Enter your username" username = "username" id = "username" required>
+                    <small class = "field-error"></small>
+                </div>
+                <div class="input-box">
+                    <label for = "email" class = "details">Email</label>
+                    <input type = "text" placeholder = "Enter your email" email = "email" id = "email" required>
+                    <small id = "email-error"></small>
+                </div>
+                <div class="input-box">
+                    <label for = "phone_number" class = "details">Phone Number</label>
+                    <input type = "text" placeholder = "Enter your phonenumber" phoneNumber = "phoneNumber" id = "phoneNumber" required>
+                    <small class = "field-error"></small>
+                </div>
+                <div class="input-box">
+                    <label for = "password" class = "details">Password</label>
+                    <input type = "text" placeholder = "Enter your password" password = "password" id = "password" required>
+                    <small class = "field-error"></small>
+                </div>
+                <!-- <div class="input-box">
+                    <label for = "confirmpassword" class = "details">Confirm Password</label>
+                    <input type = "text" placeholder = "Confirm your password" id = "confirmpassword" confirmpassword = "confirmpassword" required>
+                    <small class = "field-error"></small>
+                </div> -->
+                <div class="input-box">
+                    <label for = "" class = "details">Blood Group</label>
+                    <input type = "text" placeholder = "Confirm your password" id = "confirmpassword" confirmpassword = "confirmpassword" required>
+                    <small class = "field-error"></small>
+                </div>
+                <div class="input-box">
+                    <label for = "address" class = "details">Address</label>
+                    <input type = "text" placeholder = "Enter your address" address = "address" id = "address" required >
+                    <small class = "field-error"></small>
+                </div>
+            </div>
+
+            <div class="gender-details">
+                <span class="gender-title">Gender</span>
+                <div class="category">
+                        <input type = "radio" id = "male" name = "gender" value = "male" class = "dot 1">
+                        <span class="gender">Male</span>
+                        <input type = "radio" id = "female" name = "gender" value = "female" class = "dot 2">
+                        <span class="gender">Female</span>
+                        <input type = "radio" id = "prefer" name = "gender" value = "prefer not to say" class = "dot 3">
+                        <span class="gender">Prefer not to say</span>
+                    </label>
+                </div>
+            </div>
+            <button id="submit" class = "button">Register</button>
+        </form>
+    </div>
+
+      <footer class="footer mt-auto py-3 bg-dark fixed-bottom">
+        <div class="container">
+          <span class="text-muted">© Copyright by OnlineBloodBank. All rights reserved.</span>
+        </div>
+      </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+</html>
